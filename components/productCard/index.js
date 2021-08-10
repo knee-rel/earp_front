@@ -12,7 +12,7 @@ const ProductCard = (props) => {
       <div className="false shadow-lg cursor-pointer bg-gainsboro rounded-2xl animate--button m-6">
         <div className="relative w-full h-36 lg:h-48">
           <div className="object-cover w-full h-full rounded-t-2xl relative overflow-hidden">
-            <Image src={props.image} width={80} height={50} alt={props.title} />
+            <Image src={props.image} width={300} height={300} alt={props.title} />
           </div>
           <div className="bg-white absolute bottom-0 left-0 px-4 py-1 mb-2 rounded-r-lg ">
             <p className="text-yellow-400 text-xs lg:text-sm font-bold">

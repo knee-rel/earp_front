@@ -11,8 +11,11 @@ const MenuPage = () => {
   const [category, setCategory] = useState([]);
 
   const fetchData = () => {
-    const postsAPI = "http://127.0.0.1:8000/api/";
-    const categoryAPI = "http://127.0.0.1:8000/api/category/";
+    // const postsAPI = "http://127.0.0.1:8000/api/";
+    // const categoryAPI = "http://127.0.0.1:8000/api/category/";
+
+    const postsAPI = "https://earp-api.herokuapp.com/api/"
+    const categoryAPI = "https://earp-api.herokuapp.com/api/category/"
 
     const getPosts = axios.get(postsAPI);
     const getCategory = axios.get(categoryAPI);
