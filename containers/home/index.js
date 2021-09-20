@@ -1,4 +1,5 @@
 import React from "react";
+import CTA from "./cta";
 import Instructions from "./instructions";
 import MainBanner from "./main_banner";
 import Promos from "./promos";
@@ -9,6 +10,7 @@ const Home = () => {
       <MainBanner />
       <Promos />
       <Instructions />
+      <CTA />
     </div>
   );
 };
