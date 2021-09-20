@@ -1,4 +1,5 @@
 import React from "react";
+import Instructions from "./instructions";
 import MainBanner from "./main_banner";
 import Promos from "./promos";
 
@@ -7,6 +8,7 @@ const Home = () => {
     <div>
       <MainBanner />
       <Promos />
+      <Instructions />
     </div>
   );
 };

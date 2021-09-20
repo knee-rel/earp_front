@@ -1,38 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import axios from "axios";
 
 import Button from "../button";
 
 const ProductDetails = (props) => {
-  // const [productItem, setProductItem] = useState([]);
-
-  // useEffect(() => {
-  //   axios
-  //     .get(`http://127.0.0.1:8000/api?id=${params.slug}`, {
-  //       params: { slug: "pork-tacos" },
-  //     })
-  //     .then((res) => {
-  //       console.log(res);
-  //       setProductItem(res.data[0]);
-  //     })
-  //     .catch((err) => console.log(err));
-  // });
 
   return (
     <div className="flex flex-col items-center justify-center w-full lg:pt-10">
       <div className="background: linear-gradient(rgb(255, 255, 255) 0%, rgb(255, 255, 255) 20%, rgb(38, 191, 163) 20%, rgb(38, 191, 163) 100%);">
-        <div className="w-full overflow-hidden bg-white lg:p-8 lg:w-10/12 max-w-screen-2xl lg:shadow-outer lg:rounded-3xl">
+        <div className="w-full overflow-hidden bg-white lg:p-8 max-w-screen-2xl lg:shadow-outer lg:rounded-3xl">
           <div className="flex w-full">
             <div className="relative w-full pr-1 lg:w-7/12 round-2xl">
               {/* insert image here */}
               <div className="">
                 <Image
                   src={props.image}
-                  width={300}
-                  height={300}
+                  width={400}
+                  height={400}
                   alt={props.product_title}
                 />
               </div>
