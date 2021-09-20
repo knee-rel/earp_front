@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import Form from "../../components/form";
+import ContactForm from "./contact-form";
 
 const ContactContainer = () => {
   const [open, setOpen] = useState(false);
@@ -251,6 +253,7 @@ const ContactContainer = () => {
           </g>
         </svg>
       </div>
+      <ContactForm />
     </div>
   );
 };
