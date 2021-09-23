@@ -1,6 +1,11 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import {
+  BellIcon,
+  MenuIcon,
+  XIcon,
+  ShoppingCartIcon,
+} from "@heroicons/react/outline";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -78,6 +83,9 @@ export default function Example() {
                   </div>
                 </div>
               </div>
+              <Link href="/cart" passHref>
+                <ShoppingCartIcon className="h-6 w-6 text-gray-400 cursor-pointer hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-hidden="true" />
+              </Link>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
